@@ -1,27 +1,31 @@
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 
-// components
+//Components
 import Social from "@/components/Social";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
+import ParticlesContainers from "@/components/ParticlesContainers";
 
 const Home = () => {
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
-        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
-          {/* text */}
+        <div className="flex flex-col xl:flex-row items-center justify-between xl: pt-8 xl:pb-8">
+          {/* Text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Software Developer</span>
+            <span className="text-xl">Technical Game Designer</span>
             <h1 className="h1 mb-6">
-              Hello I'm <br /> <span className="text-accent">Luke Coleman</span>
+              Hello I'm <br />{" "}
+              <span className="text-accent">Nicolás García</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I excel at crafting elegant digital experiences and I am
-              proficient in various programming languages and technologies.
+              22-year-old fourth-year student at Saxion University of Applied
+              Sciences, studying Creative Media and Game Technologies,
+              specializing in game design.
             </p>
-            {/* btn and socials */}
+
+            {/* Socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button
                 variant="outline"
@@ -39,7 +43,11 @@ const Home = () => {
               </div>
             </div>
           </div>
-          {/* photo */}
+          {/* Particle Container */}
+          <div className="fixed top-0 left-0 w-screen h-screen -z-10">
+            <ParticlesContainers />
+          </div>
+          {/* Photo */}
           <div className="order-1 xl:order-none mb-8 xl:mb-0">
             <Photo />
           </div>
