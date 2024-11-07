@@ -17,6 +17,9 @@ module.exports = {
       sm: "640px",
       md: "768px",
       lg: "960px",
+      //Close
+      //xl: "960px",
+      //Big
       xl: "1200px",
     },
     fontFamily: {
