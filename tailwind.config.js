@@ -18,9 +18,9 @@ module.exports = {
       md: "768px",
       lg: "960px",
       //Close
-      //xl: "960px",
+      xl: "960px",
       //Big
-      xl: "1200px",
+      //xl: "1200px",
     },
     fontFamily: {
       primary: "var(--font-jetbrainsMono)",
