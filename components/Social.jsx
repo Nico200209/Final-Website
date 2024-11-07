@@ -1,12 +1,24 @@
+import { icons } from "lucide-react";
 import Link from "next/link";
 
-import { FaGithub, FaLinkedinIn, FaYoutube, FaTwitter } from "react-icons/fa";
+import {
+  FaLinkedinIn,
+  FaInstagram,
+  FaTwitter,
+  FaGithub,
+  FaYoutube,
+} from "react-icons/fa";
+
+import {
+  FaXTwitter,
+} from "react-icons/fa6";
 
 const socials = [
-  { icon: <FaGithub />, path: "" },
-  { icon: <FaLinkedinIn />, path: "" },
-  { icon: <FaYoutube />, path: "" },
-  { icon: <FaTwitter />, path: "" },
+  { icon: <FaLinkedinIn />, path: "https://www.linkedin.com/in/nicolas-garcia-0a5719201/" },
+  { icon: <FaInstagram />, path: "https://www.instagram.com/n.garciapaetz/" },
+  { icon: <FaXTwitter />, path: "https://x.com/NGarciaPaetz" },
+  { icon: <FaGithub />, path: "https://github.com/Nico200209" },
+  { icon: <FaYoutube />, path: "https://www.youtube.com/@NicolasGarcia-bm1fy" },
 ];
 
 const Social = ({ containerStyles, iconStyles }) => {
@@ -14,7 +26,7 @@ const Social = ({ containerStyles, iconStyles }) => {
     <div className={containerStyles}>
       {socials.map((item, index) => {
         return (
-          <Link key={index} href={item.path} className={iconStyles}>
+          <Link target="_blank" key={index} href={item.path} className={iconStyles}>
             {item.icon}
           </Link>
         );
