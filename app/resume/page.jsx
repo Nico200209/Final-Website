@@ -31,7 +31,7 @@ const about = {
 
 // My Experience
 const experience = {
-  icon: "/assets/resume/badge.svg",
+  icon: "/assets/resume/icons/badge.svg",
   title: "My Experience",
   description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
   items: [
@@ -55,7 +55,7 @@ const experience = {
 
 // My Education
 const education = {
-  icon: "/assets/resume/cap.svg",
+  icon: "/assets/resume/icons/cap.svg",
   title: "My Education",
   description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
   items: [
